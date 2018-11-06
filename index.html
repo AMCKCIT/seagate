@@ -1,0 +1,123 @@
+<!doctype html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="AMCKC IT Solutions">
+    
+    <title>Seagate Hotel</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/contact.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/format.css" rel="stylesheet">
+    <link href="css/half-slider.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <style>
+          a.nav-link.mobile {display: none;}
+        @media screen and (max-width: 767px) {
+          a.nav-link.mobile {display: block;}
+          a.nav-link.desk {display: none;}
+        }
+      </style>
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/Seagate Logo RGB.png" width="200px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/book">Book Now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/sails">Dining</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link desk" href="https://www.facebook.com/Seagate-Motel-Moonta-Bay-656235891127047" >
+                <img src="img/flogo.png" width="25px" alt="facebook" align="middle">
+              </a>
+              <a class="nav-link mobile" href="fb://page/Seagate-Motel-Moonta-Bay-656235891127047" >
+                <img src="img/flogo.png" width="25px" alt="facebook" align="middle">
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/accounts/login/?hl=en" >
+                  <img src="img/Instagram.png" width="25px" alt="Instagram" align="middle">
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active" style="background-image: url('img/seagate photo shoot--19.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Welcome To</h2>
+              <h3>The Seagate Hotel</h3>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('img/seagate photo shoot-11006741.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Book Now</h3>
+              <p>Relax in Style</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('img/seagate photo shoot-2283221.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Sails</h3>
+              <p>Dine In or Take-Away</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div ng-view></div>
+        </div>
+    </section>
+
+    <footer class="py-5 bg-light">
+        <div class="container">
+            <p class="m-0 text-center text-black">Copyright &copy; <a href="http://www.facebook.com/amckc" target="_blank"><img src="img/amckclogo.png" width="140px" alt=""></a></p>
+        </div>
+    </footer>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
